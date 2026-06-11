@@ -128,3 +128,10 @@ module "ec2_instances" {
     environment = "development"
   }
 }
+
+module "s3-bucket-VS" {
+  source  = "app.terraform.io/victor-terraform/s3-bucket-VS/AWS"
+  version = "1.0.0"
+  # insert required variables here
+  bucket_name = "my-s3-bucket"
+}
