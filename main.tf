@@ -129,7 +129,7 @@ module "ec2_instances" {
   }
 }
 
-module "s3-bucket-VS" {
+module "s3-bucket" {
   source  = "app.terraform.io/victor-terraform/s3-bucket-VS/AWS"
   version = "1.0.0"
   # insert required variables here
